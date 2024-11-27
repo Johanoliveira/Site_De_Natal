@@ -3,20 +3,25 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-#Top{
+body {
+  background: rgb(159, 15, 15);
+}
+#Top {
     width: 100%;
     height: 20vh;
-    background-color: brown;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: white;
     font-size: 30px;
+    transition: transform 0.3s ease;
 }
-#mariah{
-    position: absolute;
-    top: 25vh;
-    left: 40vw;
+#Top:hover {
+  color: rgb(36, 156, 46);
+  transform: scale(1.5);
+}
+#Top h1:hover {
+  scale: (1.5);
 }
 @keyframes girar {
     0% {
@@ -52,33 +57,68 @@
       transform: rotate(0deg);
     }
 }
+@keyframes jianfei-danca {
+  0% {
+    transform: rotate(0deg);
+  }
+  12.5% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  87.5% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes Cima-e-baixo {
+ 
+  50% {
+    
+  }
+}
+
+#mariah{
+  position: absolute;
+  top: 25vh;
+  left: 40vw;
+  animation: jianfei-danca 1s infinite;
+}
 
 #arvore {
     display: inline-block;
     animation: girar 2s infinite; 
     position: absolute;
     top: 180px;
-    left: 15px;
+    left: 30px;
 }
 #arvore2 {
     display: inline-block;
     animation: girar-inverso 2s infinite;
     position: absolute;
     top: 60vh;
-    left: 15px;
+    left: 30px;
 }
 #arvore3 {
     display: inline-block;
     animation: girar-inverso 2s infinite; 
     position: absolute;
     top: 180px;
-    right: 15px;
+    right: 30px;
 }
 #arvore4 {
     display: inline-block;
     animation: girar 2s infinite;
     position: absolute;
     top: 60vh;
-    right: 15px;
+    right: 30px;
 }
-
