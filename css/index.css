@@ -15,6 +15,7 @@ body {
     color: white;
     font-size: 30px;
     transition: transform 0.3s ease;
+    animation: moveLeftRight 2s infinite;
 }
 #Top:hover {
   color: rgb(36, 156, 46);
@@ -86,12 +87,18 @@ body {
     
   }
 }
+@keyframes moveLeftRight {
+  0% { left: 0; }
+  50% { left: -50px; }
+  100% { left: 0; }
+}
 
 #mariah{
   position: absolute;
   top: 25vh;
-  left: 40vw;
+  left: 41%;
   animation: jianfei-danca 1s infinite;
+  align-self: center;
 }
 
 #arvore {
@@ -121,4 +128,15 @@ body {
     position: absolute;
     top: 60vh;
     right: 30px;
+}
+#Logoif {
+  animation: girar 2s infinite;
+  position: absolute;
+  top: 60vh;
+  left: 42.5%;
+  transition: transform 1s ease;
+}
+#Logoif:hover {
+  transform: scale(1.2);
+  animation: none;
 }
